@@ -1,0 +1,10 @@
+import { build } from 'esbuild';
+import { readFile,writeFile,mkdir } from 'node:fs/promises';
+import { resolve } from 'node:path';
+const bundle=await build({entryPoints:['demo/entry.tsx'],bundle:true,write:false,minify:true,format:'iife',platform:'browser',target:'es2022',define:{'process.env.NODE_ENV':'"production"'},tsconfig:'tsconfig.json'});
+const js=bundle.outputFiles[0].text.replace(/<\/script/gi,'<\\/script');
+const css=await readFile('app/globals.css','utf8');
+const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="An offline, interactive Mental Model demo. No login or API key required."><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; connect-src 'none'; base-uri 'none'"><title>Mental Model — Interactive demo</title><style>${css}</style></head><body><div id="root"></div><noscript>Please enable JavaScript to explore this demo.</noscript><script>${js}</script></body></html>`;
+await mkdir('public/downloads',{recursive:true});
+await writeFile('public/downloads/mental-model-demo.html',html);
+console.log(`Standalone demo: ${resolve('public/downloads/mental-model-demo.html')} (${Math.round(Buffer.byteLength(html)/1024)} KB)`);

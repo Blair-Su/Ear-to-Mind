@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#191919">
+  <meta name="description" content="A thoughtful companion for product designers. Practice deeper interviews, write cognitive statements, and build mental model maps with guidance that keeps you thinking.">
+  <meta property="og:title" content="Mental Model — Stay curious. Go deeper.">
+  <meta property="og:description" content="A little guidance. A deeper understanding. Your research, from the first question to the mental model.">
+  <title>Mental Model — Your research, a little deeper.</title>
+  <link rel="icon" type="image/svg+xml" href="/marketing/assets/favicon.svg">
+  <link rel="stylesheet" href="/marketing/styles.css">
+  <script src="/marketing/app.js" type="module"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="Mental Model home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>mental model</span></a>
+    <nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#approach">Our approach</a><a href="#questions">Questions</a></nav>
+    <a class="button small ghost" data-open="statements" href="/workspace?view=statements">Try the assistant </a>
+  </header>
+  <main id="main">
+    <section class="hero wrap">
+      <h1>Stay curious.<br>Go deeper.</h1>
+      <p class="hero-description">There’s more to people than what they do.<br>Turn better questions into deeper understanding,<br class="desktop-break"> with a mental model assistant that thinks alongside you.</p>
+      <div class="hero-actions"><a class="button primary" data-open="statements" href="/workspace?view=statements">Try the assistant </a><a class="button secondary" href="/demo">See the demo</a></div>
+      </section>
+    <section class="product-stage wrap" aria-label="Interactive product preview">
+      <div class="product-window">
+        <aside class="preview-sidebar">
+          <div class="workspace-name"><span class="workspace-icon">w</span> Weeknight rituals <span>⌄</span></div>
+          <div class="sidebar-label">YOUR WORKSPACE</div>
+          <button class="preview-tab" data-preview="interview"> Interview <span class="tab-number">01</span></button>
+          <button class="preview-tab selected" data-preview="statements"> Statements <span class="tab-number">02</span></button>
+          <button class="preview-tab" data-preview="map"> Mental model <span class="tab-number">03</span></button>
+          <div class="sidebar-rule"></div>
+          <div class="sidebar-label">YOUR RESEARCH</div>
+          <div class="sidebar-item">◷ <span>Weeknight dinner routines</span></div>
+          <div class="sidebar-item muted"> <span>A space for your next insight</span></div>
+          <div class="sidebar-bottom"><div class="avatar">Y</div><div>Your workspace<small>Interactive preview</small></div><span>···</span></div>
+        </aside>
+        <div class="preview-main">
+          <div class="preview-topbar"><span id="preview-breadcrumb">Weeknight rituals <span>/</span> Statements</span><span class="preview-mode"><i></i> Sample project</span></div>
+          <div id="preview-content"></div>
+        </div>
+      </div>
+      <div class="stage-bottom"><a class="button secondary" data-open="statements" href="/workspace?view=statements">Explore the workspace </a></div>
+    </section>
+    <section class="belief wrap" id="approach">
+      <h2>AI can find the patterns.<br><span>You find the meaning.</span></h2>
+      <p>The best insights come from staying with someone’s story a little longer. Mental Model gives you the prompts, perspective, and space to do just that. So every project makes you a more thoughtful researcher.</p>
+    </section>
+    <section class="workflow-section wrap" id="how-it-works">
+      <article class="feature-row">
+        <div class="feature-copy"><h2>Be in the conversation.<br>We’ll hold the thread.</h2><p>Follow what someone actually says. Explore a thought, a feeling, or a belief with quiet prompts that help you go one question deeper.</p><a class="button secondary" data-open="interview" href="/workspace?view=interview">Try a guided interview </a></div>
+        <div class="feature-visual interview-visual"><div class="transcript-snippet"><span class="speaker-line"><span class="avatar peach">P</span> Participant <span>02:14</span></span><p>“I kept opening the fridge. I just didn’t want to make <mark>another decision</mark>.”</p></div><div class="suggestion-card"><div><span class="tiny-tag thought">Thought</span><span class="micro">A thread worth following</span></div><p>What was going through your mind when you opened it again?</p><span class="micro">Stays with their words, without assuming why.</span></div><div class="depth-indicator"><span>Explore beyond the action</span><i class="lit"></i><i class="lit"></i><i></i><i></i></div></div>
+      </article>
+      <article class="feature-row reversed">
+        <div class="feature-copy"><h2>Find the thought<br>inside the quote.</h2><p>Turn a person’s words into a cognitive statement. Write it yourself, get focused feedback, and refine your thinking one version at a time.</p><a class="button secondary" data-open="statements" href="/workspace?view=statements">Write your first statement </a></div>
+        <div class="feature-visual statement-visual"><div class="type-selector" role="group" aria-label="Explore cognitive statement types"><button class="type-pill active" data-type="Action">Action</button><button class="type-pill" data-type="Thought">Thought</button><button class="type-pill" data-type="Feeling">Feeling</button><button class="type-pill" data-type="Philosophy">Philosophy</button></div><div class="type-example"><span id="type-glyph" aria-hidden="true"></span><h3 id="type-title">What are they doing?</h3><p id="type-description">Look for the steps a person takes toward an intention. Stay with their process.</p></div></div>
+      </article>
+      <article class="feature-row map-feature">
+        <div class="feature-copy"><h2>Small observations.<br>A bigger understanding.</h2><p>Bring related intentions together in towers and mental spaces. Make the connections yourself, then look for where your product could offer support.</p><a class="button secondary" data-open="map" href="/workspace?view=map">Explore a mental model </a></div>
+        <div class="feature-visual map-visual"><div class="mini-map"><div class="mental-space"><span>Make room for dinner</span><div class="tower-row"><div class="tower"><div class="map-statement lavender">Notice energy running low</div><div class="map-statement">Check what is in the fridge</div><b>Take stock</b></div><div class="tower"><div class="map-statement peach-bg">Feel tired of choosing</div><div class="map-statement lavender">Weigh effort against time</div><div class="map-statement">Look for a familiar meal</div><b>Find a way forward</b></div></div></div><div class="map-baseline"></div><div class="support-row"><span>SUPPORT</span><div>Where could you help?</div><div class="support-add">+</div></div></div><div class="map-sample-label">Illustrative map · grouped by a researcher</div></div>
+      </article>
+      </section>
+    <section class="principles-section" aria-labelledby="principles-title">
+  <div class="wrap">
+    <div class="principle-intro"><h2 id="principles-title">More room for your thinking.</h2></div>
+    <div class="principles">
+      <article class="principle-card">
+        <div class="principle-visual guidance-visual" aria-hidden="true">
+          <div class="guidance-question">What matters most to them?</div>
+          <div class="guidance-response"><span class="sketch-line"></span><span class="sketch-line short"></span></div>
+        </div>
+        <div class="principle-copy"><h3>A little guidance.</h3><p>Thoughtful questions to help you find your own interpretation.</p></div>
+      </article>
+      <article class="principle-card">
+        <div class="principle-visual focus-visual" aria-hidden="true">
+          <div class="focus-stack"></div>
+          <div class="focus-note">One thought<br>at a time.<span class="sketch-line"></span></div>
+        </div>
+        <div class="principle-copy"><h3>Room to focus.</h3><p>A calm workspace that keeps your attention on the person.</p></div>
+      </article>
+      <article class="principle-card">
+        <div class="principle-visual evidence-visual" aria-hidden="true">
+          <div class="evidence-quote">“Even choosing dinner felt like work.”</div>
+          <div class="evidence-connector"></div>
+          <div class="evidence-note"><span class="sketch-line"></span><span class="sketch-line short"></span></div>
+        </div>
+        <div class="principle-copy"><h3>Their words, in view.</h3><p>Keep the original quote close. Return to it whenever you need.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+    <section class="faq-section wrap" id="questions"><div><h2>Before you <br>go deeper.</h2></div><div class="faq-list"><details open><summary>Who is Mental Model for?<span>+</span></summary><p>Product designers doing research in real projects. It is a space to practice non-directed interviewing, cognitive statement writing, and mental model mapping—whether you work alone or with a note-taker.</p></details><details><summary>Will it write my statements for me?<span>+</span></summary><p>No. The coaching approach keeps the thinking with you. You write, revise, and group your own statements. Guidance helps you notice what to explore without supplying a finished answer.</p></details><details><summary>What can I do in the workspace?<span>+</span></summary><p>Create research projects, import interview notes, save quotes, revise cognitive statements, and build a mental model map. Connect the personal plugin to receive coaching through your ChatGPT conversation. Audio recording and live transcription are not included.</p></details><details><summary>Where does my work go?<span>+</span></summary><p>Your signed-in workspace saves research to your private account. You choose when to prepare a ChatGPT review. Export projects at any time, or delete a project and its coaching history from project settings.</p></details><details><summary>What is the method behind it?<span>+</span></summary><p>The product is informed by Indi Young’s mental model method and non-directed interviews. It uses four lenses—Action, Thought, Feeling, and Philosophy—to help you look beyond surface behavior. This is an independent learning tool.</p></details></div></section>
+    <section class="closing wrap"><h2>Your next insight starts<br>with a better question.</h2><a class="button primary" data-open="statements" href="/workspace?view=statements">Find your first thread </a></section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>mental model</span></a><span>© 2026 Mental Model</span></footer>
+  
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
