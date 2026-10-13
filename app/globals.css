@@ -95,3 +95,6 @@
 @keyframes tour-arrive{from{opacity:0;transform:translate(var(--tour-enter-x),var(--tour-enter-y))}to{opacity:1;transform:translate(0,0)}}
 @keyframes tour-target-pulse{0%{opacity:0;inset:-3px}20%{opacity:.35}100%{opacity:0;inset:-13px}}
 @media(prefers-reduced-motion:reduce){.tour-layer[data-ready="true"] .tour-motion,.tour-layer[data-ready="true"] .tour-spotlight::after{animation:none}.tour-progress>span,.mm-app .tour-popover .primary,.particle-button{transition:none}.mm-app .tour-popover .primary:hover,.mm-app .tour-popover .tour-next:active,.particle-button[data-particle-pressed="true"],.mm-app .tour-popover .tour-next[data-particle-pressed="true"]{transform:none}.particle-burst-layer{display:none}}
+
+/* Reuse the supplied mark; its name is adjacent, so the image is decorative. */
+.mm-brand .mm-logo{display:block;width:42px;height:29px;flex:none;object-fit:contain;filter:brightness(0) invert(1)}

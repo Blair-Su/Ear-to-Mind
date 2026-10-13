@@ -93,3 +93,7 @@ The tour uses six small coachmarks anchored to actual controls, starting beside 
 A prepared fictional project and scripted feedback let users follow the whole workflow immediately. Optional edits and tour progress persist in separate browser storage. Existing demo data, real projects, and previous tutorial practice remain separate. Restart affects only the current tour example.
 
 Run `npm run test:tutorial` to check sample data, available tour targets, positioning at viewport edges, progress recovery, and storage isolation. See [the video storyboard](docs/tutorial-storyboard.md) for the corresponding promotional sequence. Browser-based visual and interaction verification is still outstanding.
+
+## Brand assets
+
+The supplied Ear to Mind symbol and full logo are preserved in `public/marketing/assets/`. Navigation uses the transparent symbol with a white CSS silhouette on dark backgrounds; the adjacent name supplies its accessible label. The demo embeds the same symbol and favicon so it remains fully offline. The full lockup is used in the portfolio film on a matching light background.
