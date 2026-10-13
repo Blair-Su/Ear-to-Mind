@@ -1,13 +1,13 @@
-# Mental Model Assistant
+# Ear to Mind Assistant
 
 A research workspace with private, account-owned projects for interviews, cognitive statement practice, and mental model mapping. English UI, neutral colors, Arial/Helvetica typography.
 
 
 ## Live website
 
-- **Website:** https://Blair-Su.github.io/Mental-Model-Assistant/
-- **Interactive demo:** https://Blair-Su.github.io/Mental-Model-Assistant/demo/
-- **Product entry:** https://Blair-Su.github.io/Mental-Model-Assistant/workspace/
+- **Website:** https://Blair-Su.github.io/Ear-to-Mind/
+- **Interactive demo:** https://Blair-Su.github.io/Ear-to-Mind/demo/
+- **Product entry:** https://Blair-Su.github.io/Ear-to-Mind/workspace/
 - **Hosted product:** https://mental-model-studio.clever-flint-5576.chatgpt.site/workspace
 
 The homepage’s **Try the assistant** links open the signed-in product. **See the demo** opens the standalone interactive demo without an account. The full product source, demo source, and website source all live in this repository.
@@ -31,7 +31,7 @@ After editing the shared UI or marketing files, run `npm run build:pages` and co
 
 This release uses the current platform through a Site-managed personal MCP plugin. It does not call an API with an embedded key and does not run a model automatically inside the website.
 
-1. Connect the Mental Model plugin in **Plugins > Personal > Created by you**.
+1. Connect the Ear to Mind plugin in **Plugins > Personal > Created by you**.
 2. In the product, prepare a statement, interview, question, or map review.
 3. Copy the request into your ChatGPT conversation with the connected plugin.
 4. ChatGPT reads that saved snapshot, follows the coaching instructions, and saves feedback to the pending request.
